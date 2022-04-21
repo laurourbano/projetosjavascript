@@ -28,12 +28,12 @@
                         <th>IMC</th>
                     </tr>
                 </thead>
-                <tbody class="tabela-pacientes">
+                <tbody id="tabela-pacientes">
                     <tr class="paciente">
                         <td class="info-nome">Paulo</td>
                         <td class="info-peso">100</td>
                         <td class="info-altura">2.00</td>
-                        <td class="info-gordura">10</td>
+                        <td class="info-gordura">15</td>
                         <td class="info-imc">0</td>
                     </tr>
 
@@ -74,10 +74,34 @@
         </section>
 
     </main>
+    <section class="container">
+        <h2 id="titulo-form">Adicionar novo paciente</h2>
+        <form id="form-adiciona">
+            <div class="">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="digite o nome do seu paciente" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="peso">Peso</label>
+                <input type="text" name="peso" id="peso" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="altura">Altura</label>
+                <input type="text" name="altura" id="altura" placeholder="digite a altura do sue paciente" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="gordura">% de Gordura</label>
+                <input type="text" name="gordura" id="gordura" placeholder="digite o percentual de gordura do seu paciente" class="campo campo-medio">
+            </div>
+
+            <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+        </form>
+    </section>
     <footer>
         <p>Documento criado por Lauro Otávio Urbano</p>
         <p class="rodape">o javascript não foi carregado corretamente</p>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/calculaImc.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
