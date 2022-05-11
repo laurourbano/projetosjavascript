@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var lauro = document.createElement("div");
+
+        lauro.style.height = "90%";
+        lauro.style.width = "90%";
+        lauro.style.backgroundColor = "lightgray";
+
+        lauro.style.position = "relative";
+        lauro.style.margin = "0 auto";
+        lauro.style.textAlign = "center";
+        lauro.style.padding = "10px"
+        lauro.style.color = "#666"
+        lauro.style.borderRadius = "25px"
+        lauro.style.fontFamily = "Courier"
+
+        lauro.innerHTML = "<h1>Aplicar</h1>";
+
+        document.body.appendChild(lauro);
+
+        var entrada = document.createElement("input");
+        entrada.placeholder = "digite seu e-mail aqui...";
+
+        lauro.appendChild(entrada);
+        entrada.style.backgroundColor = "pink";
+
+        var botao = document.createElement("button");
+        botao.textContent = "Enviar";
+
+        botao.style.opacity = ".7"
+        botao.style.backgroundColor = "blue";
+        botao.style.color = "yellow";
+
+        lauro.appendChild(botao);
+
+
+    </script>
+</body>
+</html>
